@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.text_div {
+    width: 50%;
+    height: 100%;
+}
+
+.subText {
+    font-family: 'DM Sans', sans-serif;
+    color: #6B7280;
+    
+}
+
+.image_div {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image_div img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

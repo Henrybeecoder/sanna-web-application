@@ -1,0 +1,40 @@
+.input:focus {
+  border: 1px solid #1e223e;
+  color: #1e223e;
+}
+
+.error {
+  border: 1px solid rgba(255, 89, 94, 1);
+}
+
+.error::placeholder {
+  color: rgba(255, 89, 94, 1);
+}
+
+.label {
+  margin-bottom: 0.5em;
+  display: block;
+  font-weight: 400;
+}
+
+.small {
+  display: block;
+  margin-top: 2px;
+  color: rgba(255, 89, 94, 1);
+  font-size: 14px;
+}
+
+.group {
+  position: relative;
+}
+
+.adorn {
+  position: absolute;
+  top: 26%;
+  right: 6%;
+}
+
+.adorn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
