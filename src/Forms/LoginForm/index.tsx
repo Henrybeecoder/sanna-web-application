@@ -5,12 +5,13 @@ import { useFormik } from "formik";
 import Input, { InputProps } from "../../component/Input";
 import Button from "../../component/Button";
 import { Eye } from "react-feather";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const formFields: InputProps[] = [
     {
       type: "email",
-      placeholder: "Enter email",
+      placeholder: "Email Address",
       label: "Email",
       name: "email",
     },
@@ -58,7 +59,6 @@ export default function LoginForm() {
                 type={visible ? "text" : field.type}
                 styleName="input"
                 placeholder={field.placeholder}
-                label={field.label}
                 name={field.name}
                 value={formik.values[`${field.name}`]}
                 onChange={formik.handleChange}
@@ -69,17 +69,18 @@ export default function LoginForm() {
                     ? formik.errors[`${field.name}`]
                     : null
                 }
-                adornment={field.type === "password" ? <Eye /> : undefined}
-                adornmentAlt="eye"
+                // adornment={field.type === "password" ? <Eye /> : undefined}
+                // adornmentAlt="eye"
                 onAdornmentClick={togglePassword}
               />
             </div>
           ))}
           <div className="group">
-            <label>
-              <input type="checkbox" /> Remember me
-            </label>
-            <a href="/resetpassword">Forgot Password?</a>
+            <div className="firstGroup">
+              <input type="checkbox" value="lsRememberMe" id="rememberMe" />{" "}
+              <label>Remember me</label>
+            </div>
+            <Link to="/forgot-password">Forgot Password</Link>
           </div>
 
           <Button type="submit" color="primary">

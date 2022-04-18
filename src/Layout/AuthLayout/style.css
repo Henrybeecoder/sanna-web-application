@@ -7,6 +7,12 @@
 .text_div {
     width: 50%;
     height: 100%;
+    padding: 70px 120px;
+    background: #F9FAFB;
+}
+
+.text_div {
+    color: #EF582F;
 }
 
 .subText {
