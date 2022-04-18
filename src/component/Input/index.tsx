@@ -11,7 +11,7 @@ export interface InputProps
   notify?: string;
 }
 
-const Input = ({
+export const Input = ({
   adornment,
   label,
   onAdornmentClick,
