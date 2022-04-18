@@ -31,7 +31,7 @@ export const Input = ({
           {...props}
           className={
             error
-              ? `"input" "styles.error" ${props.className}`
+              ? `"input error ${props.className}`
               : `"input" ${props.className}`
           }
           aria-labelledby={`label-${props.name}`}
