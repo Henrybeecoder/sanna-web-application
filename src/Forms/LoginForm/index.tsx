@@ -76,11 +76,10 @@ export default function LoginForm() {
             </div>
           ))}
           <div className="group">
-            <div className="firstGroup">
-              <input type="checkbox" value="lsRememberMe" id="rememberMe" />{" "}
-              <label>Remember me</label>
-            </div>
-            <Link to="/forgot-password">Forgot Password</Link>
+            <label>
+              <input type="checkbox" /> <p>Remember me</p>
+            </label>
+            <Link to="forgot-password">Forgot Password?</Link>
           </div>
 
           <Button type="submit" color="primary">

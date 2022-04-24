@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "./style.css";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color: "primary" | "secondary" | "grey";
@@ -26,15 +27,12 @@ const ButtonDiv = styled.button`
   background: rgb(0, 0, 0);
   background: linear-gradient(
     126deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 62%,
-    rgba(222, 109, 79, 1) 63%
+    #F59324,
+    #EF582F
   );
   color: white
+  width: 100%;
 
-  font-size: 1em;
-  margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+ 
 `;

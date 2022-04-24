@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.button {
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+    border-top-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    cursor: pointer;
+    outline: none;
+    padding: 18px;
+    border: none;
+}
