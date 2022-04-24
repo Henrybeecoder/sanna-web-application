@@ -7,12 +7,17 @@
 .text_div {
     width: 50%;
     height: 100%;
-    padding: 70px 120px;
+    padding: 80px 120px;
     background: #F9FAFB;
 }
 
 .text_div {
     color: #EF582F;
+}
+
+.text_div h1 {
+    margin-bottom: 10px;
+    font-family: 'Reggae One', cursive;
 }
 
 .subText {
@@ -33,4 +38,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width:800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .image_div {
+        display: none;
+    }
+    .text_div {
+        width: 100%;
+        padding: 25px 25px 10px 25px;
+    }
 }

@@ -4,8 +4,8 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import Input, { InputProps } from "../../component/Input";
 import Button from "../../component/Button";
-import { Eye } from "react-feather";
 import { Link } from "react-router-dom";
+import Icons from "../../component/Icons";
 
 export default function LoginForm() {
   const formFields: InputProps[] = [
@@ -87,12 +87,13 @@ export default function LoginForm() {
           </Button>
           <p className="link">
             Dont have an account?{" "}
-            <a href="/signup">
+            <Link to="/signup">
               <strong>Sign Up</strong>
-            </a>
+            </Link>
           </p>
         </div>
       </form>
+      <Icons />
     </div>
   );
 }

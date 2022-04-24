@@ -2,6 +2,7 @@
 .group {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
  .group label {
      display: flex;
@@ -22,4 +23,25 @@
      font-family: 'DM Sans', sans-serif;
      text-decoration: none;
      margin-top: 18px;
+ }
+
+ .link {
+      font-family: 'DM Sans', sans-serif;
+      color: #6B7280;
+      margin: 20px 0;
+ }
+
+ .link a {
+    color:  #EF582F;
+    font-family: 'DM Sans', sans-serif !important;
+    text-decoration: none;
+ }
+ @media screen and (max-width:800px) {
+     .group {
+         font-size: 0.8rem;
+     }
+     .group a {
+         
+         margin-left: -50px;
+     }
  }

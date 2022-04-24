@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import "./style.css";
 
 interface ChildProps {
@@ -18,7 +17,7 @@ const AuthLayout = ({
     <div className="wrapper">
       <div className="text_div">
         <h1>{headerText}</h1>
-        <h3 className="subText">{subText}</h3>
+        <p className="subText">{subText}</p>
         {children}
       </div>
       <div className="image_div">

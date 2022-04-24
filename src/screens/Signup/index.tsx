@@ -7,8 +7,8 @@ export default function SignupScreen() {
     <div>
       <AuthLayout
         headerText="Signup"
-        subText="henry"
-        Image="https://res.cloudinary.com/henrybee558/image/upload/v1649684615/sanna/sanna_login_pamh4m.svg"
+        subText="Sign Up to Sanna account to start aexploring artworks from artists across Africa"
+        Image="https://res.cloudinary.com/henrybee558/image/upload/v1649683091/sanna/sanna_pic_xb7crv.svg"
       >
         henry
       </AuthLayout>

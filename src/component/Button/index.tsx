@@ -32,7 +32,5 @@ const ButtonDiv = styled.button`
   );
   color: white
   width: 100%;
-
-  padding: 0.25em 1em;
  
 `;
