@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 
 interface ChildProps {
   headerText: string;
   subText: string;
-  Image: string;
+  image: string;
+  inputImage: HTMLImageElement;
 }
 
 const AuthLayout = ({
   children,
   headerText,
   subText,
-  Image,
+  image,
+  inputImage,
 }: React.PropsWithChildren<ChildProps>) => {
+  useEffect(() => {
+    const pictures = [{ fileName: Image }];
+    pictures.forEach((picture) => {
+      const img = new Image();
+      img.src = picture.fileName;
+    });
+  }, []);
   return (
     <div className="wrapper">
       <div className="text_div">
@@ -21,7 +30,7 @@ const AuthLayout = ({
         {children}
       </div>
       <div className="image_div">
-        <img src={Image} alt="" />
+        <img src={image} alt="" />
       </div>
     </div>
   );
