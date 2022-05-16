@@ -15,13 +15,6 @@ const AuthLayout = ({
   image,
   inputImage,
 }: React.PropsWithChildren<ChildProps>) => {
-  useEffect(() => {
-    const pictures = [{ fileName: Image }];
-    pictures.forEach((picture) => {
-      const img = new Image();
-      img.src = picture.fileName;
-    });
-  }, []);
   return (
     <div className="wrapper">
       <div className="text_div">
