@@ -24,6 +24,7 @@ const AuthLayout = ({
       </div>
       <div className="image_div">
         <img src={image} alt="" />
+        
       </div>
     </div>
   );
