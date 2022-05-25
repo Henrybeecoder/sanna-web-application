@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+.header {
+    background: #111827;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    height: 15vh;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 13rem;
+}
+
+.nav ul li {
+    color: white;
+    list-style: none;
+    
+}
+
+.buttons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: 20rem;
+    margin-right: -7rem;
+}
+
+.button-wrapper {
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .body {
+        display: none;
+    }
+    .hambuger {
+        height: 100%;
+    }
+
+    .line:first-child {
+        margin-top: 30px;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin-top: 5px;
+        margin-left: 90%;
+    }
+}
+

@@ -1,19 +1,19 @@
+// @ts-ignore
+// @ts-nocheck
 import React, { useEffect } from "react";
 import "./style.css";
 
 interface ChildProps {
   headerText: string;
   subText: string;
-  image: string;
-  inputImage: HTMLImageElement;
+  Image: HTMLImageElement;
 }
 
 const AuthLayout = ({
   children,
   headerText,
   subText,
-  image,
-  inputImage,
+  Image,
 }: React.PropsWithChildren<ChildProps>) => {
   return (
     <div className="wrapper">
@@ -23,8 +23,9 @@ const AuthLayout = ({
         {children}
       </div>
       <div className="image_div">
-        <img src={image} alt="" />
-        
+        {/*ts-ignore */}
+
+        <img src={Image} alt="" />
       </div>
     </div>
   );

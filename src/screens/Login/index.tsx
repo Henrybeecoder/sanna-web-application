@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React from "react";
 import "./style.css";
 import AuthLayout from "../../Layout/AuthLayout";
@@ -10,7 +11,7 @@ export default function LoginScreen() {
       <AuthLayout
         headerText="Login"
         subText="Login to Sanna account to start exploring artworks from artists across Africa"
-        image={sannaLoginImg}
+        Image={sannaLoginImg}
       >
         <LoginForm />
       </AuthLayout>

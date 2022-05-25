@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React from "react";
 import "./style.css";
 import AuthLayout from "../../Layout/AuthLayout";

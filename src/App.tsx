@@ -1,10 +1,10 @@
 import React from "react";
-import LoginScreen from "./screens/Login";
+import HomePage from "./screens/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <LoginScreen />
+      <HomePage />
     </div>
   );
 }
