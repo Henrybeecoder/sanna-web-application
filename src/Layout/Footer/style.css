@@ -46,5 +46,21 @@
 @media (max-width: 992px) {
     .footer nav ul {
         margin: 0;
+        flex-direction: column;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .footer nav ul li {
+        padding: 4px 0;
+    }
+    .button-container {
+        width: 60%;
+    }
+    .copy-right {
+        text-align: center;
+    }
+    .footer {
+        padding: 5px 0;
+        height: 70vh;
     }
 } 

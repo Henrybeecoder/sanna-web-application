@@ -5,6 +5,74 @@ import Footer from "../../Layout/Footer";
 import likeIcon from "../../Images/likeIcon.svg";
 
 export default function HomePage() {
+  const sculptureData = [
+    {
+      id: 1,
+      imgData:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655730805/sanna/sanna_img_t6air3.svg",
+      name: "African Woman",
+      price: "$5000",
+      userName: "Dianne Russell",
+      userProfession: "Painter",
+      userImg:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655732127/sanna/Avatar_vgdf4d.svg",
+    },
+    {
+      id: 2,
+      imgData:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655737073/sanna/sanna_img2_zhkw9i.svg",
+      name: "African Woman",
+      price: "$5000",
+      userName: "Dianne Russell",
+      userProfession: "Painter",
+      userImg:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655732127/sanna/Avatar_vgdf4d.svg",
+    },
+    {
+      id: 3,
+      imgData:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655737197/sanna/sanna_img3_ys1mc7.svg",
+      name: "African Woman",
+      price: "$5000",
+      userName: "Dianne Russell",
+      userProfession: "Painter",
+      userImg:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655732127/sanna/Avatar_vgdf4d.svg",
+    },
+    {
+      id: 4,
+      imgData:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655737073/sanna/sanna_img2_zhkw9i.svg",
+      name: "African Woman",
+      price: "$5000",
+      userName: "Dianne Russell",
+      userProfession: "Painter",
+      userImg:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655732127/sanna/Avatar_vgdf4d.svg",
+    },
+    {
+      id: 5,
+      imgData:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655737197/sanna/sanna_img3_ys1mc7.svg",
+      name: "African Woman",
+      price: "$5000",
+      userName: "Dianne Russell",
+      userProfession: "Painter",
+      userImg:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655732127/sanna/Avatar_vgdf4d.svg",
+    },
+    {
+      id: 6,
+      imgData:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655730805/sanna/sanna_img_t6air3.svg",
+      name: "African Woman",
+      price: "$5000",
+      userName: "Dianne Russell",
+      userProfession: "Painter",
+      userImg:
+        "https://res.cloudinary.com/henrybee558/image/upload/v1655732127/sanna/Avatar_vgdf4d.svg",
+    },
+  ];
   const paintingData = [
     {
       id: 1,
