@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+.parent-div {
+    width: 373px;
+    position: relative;
+}
+.user-container {
+    display: flex;
+    color: #FFFFFF;
+    padding-top: 90%;
+    font-family: 'DM Sans', sans-serif;
+    width: 60%;
+    padding-left: 30px;
+}
+
+.text-box {
+    margin-left: 15px;
+}
+
+.text-box p {
+    opacity: 0.8;
+}
+
+.pricing {
+    background: #FAFAFA;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    padding: 20px 0;
+    
+}
+
+.pricing h2 {
+    font-family: 'Reggae One', cursive;
+    font-size: 20px;
+}
+
+.pricing p {
+   color: #EF4444;
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.container {
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.like-icon {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+}
+
+.home-page {
+    padding: 0 70px;
+}
+.home-page h1 {
+  font-family: 'Reggae One', cursive;
+}
+
+@media (max-width: 992px) {
+    .container {  grid-template-columns: auto; padding: 0;}
+    .parent-div {
+        width: 100%;
+    }
+    .home-page {
+        padding: 0 10px;
+    }
+} 
