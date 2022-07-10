@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../component/Button";
 import logo from "../../Images/logo.svg";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -20,9 +21,14 @@ export default function Header() {
           </ul>
         </div>
         <div className="buttons">
-          <p>Login</p>
+          <Link to="/login">
+            <p>Login</p>
+          </Link>
+
           <div className="button-wrapper">
-            <Button color="secondary">signup</Button>
+            <Link to="/signup">
+              <Button color="secondary">signup</Button>
+            </Link>
           </div>
         </div>
       </div>

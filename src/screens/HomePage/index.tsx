@@ -3,6 +3,8 @@ import "./style.css";
 import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
 import likeIcon from "../../Images/likeIcon.svg";
+import Bannner from "../../component/Banner";
+import Button from "../../component/Button";
 
 export default function HomePage() {
   const sculptureData = [
@@ -144,6 +146,7 @@ export default function HomePage() {
   return (
     <div>
       <Header />
+      <Bannner />
       <div className="home-page">
         <h1>Paintings</h1>
         <div className="container">
@@ -176,8 +179,11 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+        <div className="parent-button">
+          <Button color="primary">View All</Button>
+        </div>
       </div>
-      <div className="home-page">
+      <div className="sculpture-page">
         <h1>Sculptures</h1>
         <div className="container">
           {sculptureData.map((data) => (
@@ -208,6 +214,9 @@ export default function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="parent-button">
+          <Button color="primary">View All</Button>
         </div>
       </div>
       <Footer />

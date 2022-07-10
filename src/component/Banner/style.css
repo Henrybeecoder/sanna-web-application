@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+.banner {
+    height: 80vh;
+    background-image: url("https://res.cloudinary.com/henrybee558/image/upload/v1657096908/sanna/BG_1_ydfxut.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.banner h1 {
+    font-family: 'Reggae One', cursive;
+    font-size: 3rem;
+    margin-bottom: 2px;
+}
+
+.banner p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.searchHolder {
+    display: flex;
+    position: relative;
+}
+
+.searchHolder input {
+    padding: 15px 0;
+}
+
+.searchHolder input:focus {
+   outline: none;
+}
+.button-holder {
+    width: 15%;
+    position: absolute;
+    top: 30%;
+    left: 87%;
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        padding: 0 2rem;
+    }
+    .searchHolder {
+        flex-direction: column;
+    }
+    .button-holder {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+}

@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ForgotPassword from "./screens/ForgotPassword";
 import SignupScreen from "./screens/Signup";
+import LoginScreen from "./screens/Login";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="forgot-password" element={<ForgotPassword />} />
       <Route path="signup" element={<SignupScreen />} />
+      <Route path="login" element={<LoginScreen />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
